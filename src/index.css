@@ -1,0 +1,417 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  /* colors */
+  [data-pc='pink-salmon'] {
+    --pc-50: 255 241 242;
+    --pc-100: 255 228 231;
+    --pc-200: 255 204 212;
+    --pc-300: 254 147 163;
+    --pc-400: 253 111 136;
+    --pc-500: 246 61 97;
+    --pc-600: 228 26 76;
+    --pc-700: 192 16 64;
+    --pc-800: 161 16 60;
+    --pc-900: 138 17 57;
+  }
+  [data-fc='pink-salmon'] {
+    --fc-50: 255 241 242;
+    --fc-100: 255 228 231;
+    --fc-200: 255 204 212;
+    --fc-300: 254 147 163;
+    --fc-400: 253 111 136;
+    --fc-500: 246 61 97;
+    --fc-600: 228 26 76;
+    --fc-700: 192 16 64;
+    --fc-800: 161 16 60;
+    --fc-900: 138 17 57;
+  }
+  [data-sc='pink-salmon'] {
+    --sc-50: 255 241 242;
+    --sc-100: 255 228 231;
+    --sc-200: 255 204 212;
+    --sc-300: 254 147 163;
+    --sc-400: 253 111 136;
+    --sc-500: 246 61 97;
+    --sc-600: 228 26 76;
+    --sc-700: 192 16 64;
+    --sc-800: 161 16 60;
+    --sc-900: 138 17 57;
+  }
+  [data-tc='pink-salmon'] {
+    --tc-50: 255 241 242;
+    --tc-100: 255 228 231;
+    --tc-200: 255 204 212;
+    --tc-300: 254 147 163;
+    --tc-400: 253 111 136;
+    --tc-500: 246 61 97;
+    --tc-600: 228 26 76;
+    --tc-700: 192 16 64;
+    --tc-800: 161 16 60;
+    --tc-900: 138 17 57;
+  }
+  [data-pc='chestnut-rose'] {
+    --pc-50: 252 244 244;
+    --pc-100: 250 230 230;
+    --pc-200: 247 209 210;
+    --pc-300: 240 177 178;
+    --pc-400: 229 132 133;
+    --pc-500: 212 82 84;
+    --pc-600: 194 64 66;
+    --pc-700: 163 50 52;
+    --pc-800: 135 45 46;
+    --pc-900: 113 43 44;
+  }
+  [data-fc='chestnut-rose'] {
+    --fc-50: 252 244 244;
+    --fc-100: 250 230 230;
+    --fc-200: 247 209 210;
+    --fc-300: 240 177 178;
+    --fc-400: 229 132 133;
+    --fc-500: 212 82 84;
+    --fc-600: 194 64 66;
+    --fc-700: 163 50 52;
+    --fc-800: 135 45 46;
+    --fc-900: 113 43 44;
+  }
+  [data-sc='chestnut-rose'] {
+    --sc-50: 252 244 244;
+    --sc-100: 250 230 230;
+    --sc-200: 247 209 210;
+    --sc-300: 240 177 178;
+    --sc-400: 229 132 133;
+    --sc-500: 212 82 84;
+    --sc-600: 194 64 66;
+    --sc-700: 163 50 52;
+    --sc-800: 135 45 46;
+    --sc-900: 113 43 44;
+  }
+  [data-tc='chestnut-rose'] {
+    --tc-50: 252 244 244;
+    --tc-100: 250 230 230;
+    --tc-200: 247 209 210;
+    --tc-300: 240 177 178;
+    --tc-400: 229 132 133;
+    --tc-500: 212 82 84;
+    --tc-600: 194 64 66;
+    --tc-700: 163 50 52;
+    --tc-800: 135 45 46;
+    --tc-900: 113 43 44;
+  }
+  [data-pc='asparagus'] {
+    --pc-50: 244 247 238;
+    --pc-100: 230 237 218;
+    --pc-200: 207 221 185;
+    --pc-300: 176 198 144;
+    --pc-400: 148 175 108;
+    --pc-500: 124 155 82;
+    --pc-600: 91 117 59;
+    --pc-700: 71 90 49;
+    --pc-800: 59 73 43;
+    --pc-900: 51 64 39;
+  }
+  [data-fc='asparagus'] {
+    --fc-50: 244 247 238;
+    --fc-100: 230 237 218;
+    --fc-200: 207 221 185;
+    --fc-300: 176 198 144;
+    --fc-400: 148 175 108;
+    --fc-500: 124 155 82;
+    --fc-600: 91 117 59;
+    --fc-700: 71 90 49;
+    --fc-800: 59 73 43;
+    --fc-900: 51 64 39;
+  }
+  [data-sc='asparagus'] {
+    --sc-50: 244 247 238;
+    --sc-100: 230 237 218;
+    --sc-200: 207 221 185;
+    --sc-300: 176 198 144;
+    --sc-400: 148 175 108;
+    --sc-500: 124 155 82;
+    --sc-600: 91 117 59;
+    --sc-700: 71 90 49;
+    --sc-800: 59 73 43;
+    --sc-900: 51 64 39;
+  }
+  [data-tc='asparagus'] {
+    --tc-50: 244 247 238;
+    --tc-100: 230 237 218;
+    --tc-200: 207 221 185;
+    --tc-300: 176 198 144;
+    --tc-400: 148 175 108;
+    --tc-500: 124 155 82;
+    --tc-600: 91 117 59;
+    --tc-700: 71 90 49;
+    --tc-800: 59 73 43;
+    --tc-900: 51 64 39;
+  }
+  [data-pc='cerise'] {
+    --pc-50: 253 242 249;
+    --pc-100: 252 231 245;
+    --pc-200: 251 207 236;
+    --pc-300: 249 168 220;
+    --pc-400: 244 114 195;
+    --pc-500: 235 73 169;
+    --pc-600: 219 43 139;
+    --pc-700: 189 25 110;
+    --pc-800: 157 23 91;
+    --pc-900: 131 24 78;
+  }
+  [data-fc='cerise'] {
+    --fc-50: 253 242 249;
+    --fc-100: 252 231 245;
+    --fc-200: 251 207 236;
+    --fc-300: 249 168 220;
+    --fc-400: 244 114 195;
+    --fc-500: 235 73 169;
+    --fc-600: 219 43 139;
+    --fc-700: 189 25 110;
+    --fc-800: 157 23 91;
+    --fc-900: 131 24 78;
+  }
+  [data-sc='cerise'] {
+    --sc-50: 253 242 249;
+    --sc-100: 252 231 245;
+    --sc-200: 251 207 236;
+    --sc-300: 249 168 220;
+    --sc-400: 244 114 195;
+    --sc-500: 235 73 169;
+    --sc-600: 219 43 139;
+    --sc-700: 189 25 110;
+    --sc-800: 157 23 91;
+    --sc-900: 131 24 78;
+  }
+  [data-tc='cerise'] {
+    --tc-50: 253 242 249;
+    --tc-100: 252 231 245;
+    --tc-200: 251 207 236;
+    --tc-300: 249 168 220;
+    --tc-400: 244 114 195;
+    --tc-500: 235 73 169;
+    --tc-600: 219 43 139;
+    --tc-700: 189 25 110;
+    --tc-800: 157 23 91;
+    --tc-900: 131 24 78;
+  }
+  [data-pc='salomie'] {
+    --pc-50: 255 249 237;
+    --pc-100: 254 241 214;
+    --pc-200: 252 223 172;
+    --pc-300: 250 204 130;
+    --pc-400: 246 165 65;
+    --pc-500: 243 139 28;
+    --pc-600: 228 112 18;
+    --pc-700: 189 85 17;
+    --pc-800: 151 68 21;
+    --pc-900: 121 57 21;
+  }
+  [data-fc='salomie'] {
+    --fc-50: 255 249 237;
+    --fc-100: 254 241 214;
+    --fc-200: 252 223 172;
+    --fc-300: 250 204 130;
+    --fc-400: 246 165 65;
+    --fc-500: 243 139 28;
+    --fc-600: 228 112 18;
+    --fc-700: 189 85 17;
+    --fc-800: 151 68 21;
+    --fc-900: 121 57 21;
+  }
+  [data-sc='salomie'] {
+    --sc-50: 255 249 237;
+    --sc-100: 254 241 214;
+    --sc-200: 252 223 172;
+    --sc-300: 250 204 130;
+    --sc-400: 246 165 65;
+    --sc-500: 243 139 28;
+    --sc-600: 228 112 18;
+    --sc-700: 189 85 17;
+    --sc-800: 151 68 21;
+    --sc-900: 121 57 21;
+  }
+  [data-tc='salomie'] {
+    --tc-50: 255 249 237;
+    --tc-100: 254 241 214;
+    --tc-200: 252 223 172;
+    --tc-300: 250 204 130;
+    --tc-400: 246 165 65;
+    --tc-500: 243 139 28;
+    --tc-600: 228 112 18;
+    --tc-700: 189 85 17;
+    --tc-800: 151 68 21;
+    --tc-900: 121 57 21;
+  }
+  [data-pc='turquoise-blue'] {
+    --pc-50: 235 254 248;
+    --pc-100: 207 252 235;
+    --pc-200: 163 247 219;
+    --pc-300: 85 235 196;
+    --pc-400: 44 219 179;
+    --pc-500: 7 194 158;
+    --pc-600: 0 157 129;
+    --pc-700: 0 126 107;
+    --pc-800: 1 100 86;
+    --pc-900: 2 82 72;
+  }
+  [data-fc='turquoise-blue'] {
+    --fc-50: 235 254 248;
+    --fc-100: 207 252 235;
+    --fc-200: 163 247 219;
+    --fc-300: 85 235 196;
+    --fc-400: 44 219 179;
+    --fc-500: 7 194 158;
+    --fc-600: 0 157 129;
+    --fc-700: 0 126 107;
+    --fc-800: 1 100 86;
+    --fc-900: 2 82 72;
+  }
+  [data-sc='turquoise-blue'] {
+    --sc-50: 235 254 248;
+    --sc-100: 207 252 235;
+    --sc-200: 163 247 219;
+    --sc-300: 85 235 196;
+    --sc-400: 44 219 179;
+    --sc-500: 7 194 158;
+    --sc-600: 0 157 129;
+    --sc-700: 0 126 107;
+    --sc-800: 1 100 86;
+    --sc-900: 2 82 72;
+  }
+  [data-tc='turquoise-blue'] {
+    --tc-50: 235 254 248;
+    --tc-100: 207 252 235;
+    --tc-200: 163 247 219;
+    --tc-300: 85 235 196;
+    --tc-400: 44 219 179;
+    --tc-500: 7 194 158;
+    --tc-600: 0 157 129;
+    --tc-700: 0 126 107;
+    --tc-800: 1 100 86;
+    --tc-900: 2 82 72;
+  }
+  /* elements */
+  * {
+    @apply dark:text-slate-100 text-slate-900;
+  }
+
+  body {
+    @apply dark:bg-dark1 bg-light1 p-0 m-0;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply dark:text-pc-50 text-pc-900 font-bold;
+  }
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  h5,
+  h6 {
+    @apply text-sm;
+  }
+  button {
+    @apply rounded;
+  }
+  ::selection {
+    @apply bg-pc-500 text-pc-50;
+  }
+  /* scrollbar */
+
+  /* content editable */
+  [contenteditable='true']:empty:before {
+    content: attr(placeholder);
+    display: block;
+    @apply dark:text-gray-500 text-gray-300;
+  }
+  /* classes */
+  .border,
+  .border-r,
+  .border-l,
+  .border-t,
+  .border-b,
+  .border-x,
+  .border-y,
+  .border-b-2,
+  .border-2 {
+    @apply border-pc-400 dark:border-pc-200;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply dark:bg-pc-200/50 dark:hover:bg-pc-200/80 border dark:border-pc-200/50 dark:hover:border-pc-200/80 transition-colors font-semibold px-4 h-10 flex items-center rounded disabled:dark:bg-gray-400 disabled:dark:border-gray-400;
+  }
+  .btn-outlined {
+    @apply btn dark:bg-transparent dark:text-pc-200/80 dark:hover:text-white;
+  }
+  .icon-btn {
+    @apply dark:bg-pc-200/30 dark:hover:bg-pc-200/50 focus:outline-none dark:focus:bg-pc-200/50 transition-colors font-semibold p-1 rounded;
+  }
+  .paper {
+    @apply dark:bg-dark2 dark:hover:bg-dark1/50 border dark:border-dark2 rounded px-3 py-2 w-full flex items-center transition-colors focus:outline-none active:outline-none dark:focus:border-dark1/50 focus-within:outline-none focus-visible:outline-none;
+  }
+  .text-box {
+    @apply dark:bg-pc-200/50 dark:focus:bg-pc-200/80 border dark:border-pc-300/50 dark:hover:border-pc-300/80 dark:text-pc-900 focus:outline-none focus-visible:outline-none active:outline-none focus:border-pc-400/80 px-4 h-10 flex items-center rounded;
+  }
+}
+
+.react-datepicker__header {
+  @apply dark:bg-dark2 bg-light1;
+}
+.react-datepicker__day--today {
+  @apply dark:!border-red-400 !border-red-500 border rounded;
+}
+.react-datepicker__day--selected {
+  @apply dark:!bg-red-400 !bg-red-500 rounded;
+}
+.react-datepicker__day--disabled {
+  @apply dark:text-slate-500 text-slate-400;
+}
+/* .react-datepicker__navigation {
+  @apply absolute top-2;
+} */
+.react-datepicker__day--outside-month {
+  @apply invisible;
+}
+::-webkit-scrollbar {
+  @apply dark:bg-transparent w-1.5 h-1.5 !cursor-auto;
+}
+::-webkit-scrollbar:disabled {
+  @apply hidden;
+}
+.scrollbar-xs::-webkit-scrollbar {
+  @apply w-0.5 h-0.5;
+}
+.scrollbar-lg::-webkit-scrollbar {
+  @apply w-2 h-2;
+}
+::-webkit-scrollbar-track {
+  @apply dark:bg-dark1;
+}
+::-webkit-scrollbar-track:disabled {
+  @apply dark:bg-dark1 invisible;
+}
+::-webkit-scrollbar-thumb {
+  @apply dark:bg-dark3/50 !cursor-auto;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-thumb:hover {
+  @apply dark:bg-dark3/80;
+}
+
+input#file-upload-button {
+  display: none !important;
+}
